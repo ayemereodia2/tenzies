@@ -1,0 +1,94 @@
+* {
+  font-family: Karla, Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0B2434;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  padding: 2vw; /* Changed from 20px to 2% of viewport width */
+  align-items: center;
+  justify-content: center;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+  max-width: 450px ; /* Changed from 400px to 50% of viewport width */
+  max-height: 400px ; /* Changed from 400px to 50% of viewport height */
+}
+
+.main-container {
+  border-radius: 1rem; /* Changed from 10px to 1rem, assuming root font-size is 16px */
+  height: 100%;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 34.56px /* Changed from 34.56px to approximately 4.32% of viewport width */
+}
+
+.board-component {
+  display: grid;
+  grid-template-columns: repeat(5, 5.625vw); /* Changed from 45px to about 5.625% of viewport width */
+  grid-template-rows: repeat(2, auto);
+  column-gap: 1.25vw; /* Changed from 10px to approximately 1.25% of viewport width */
+  height: 12.5vw; /* Changed from 100px to 12.5% of viewport width */
+  width: 32.25vw; /* Changed from 258px to approximately 32.25% of viewport width */
+  margin: 1.25vw; /* Changed from 10px to about 1.25% of viewport width */
+  align-items: center;
+  row-gap: 1.25vw;
+}
+.dice-component {
+  width: 4.48vw; /* Changed from 35.84px to approximately 4.48% of viewport width */
+  height: 4.48vw; /* Changed from 35.84px to approximately 4.48% of viewport width */
+  border-radius: 0.4763vw; /* Changed from 3.81px to about 0.4763% of viewport width */
+  background-color: #F5F5F5;
+  box-shadow: 0 0.5vw 1.25vw rgba(0, 0, 0, 0.25); /* Adjusted for responsive scaling */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice-component > span {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 2.566vw; /* Changed from 20.50px to about 2.566% of viewport width */
+  line-height: 3.009vw; /* Changed from 24.07px to about 3.009% of viewport width */
+  text-align: center;
+}
+
+button {
+  width: 92.16px; 
+  height: 35.84px; 
+  font-family: Karla;
+  font-weight: 700;
+  background-color: #5035FF;
+  color: #FFFFFF;
+  border-radius: 3.81px; 
+  border-width: 0;
+}
+
+main > h1 {
+  text-align: center;
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 3.2075vw; /* Changed from 25.66px to about 3.2075% of viewport width */
+  color: #2B283A;
+  line-height: 3.74125vw; /* Changed from 29.93px to about 3.74125% of viewport width */
+}
+
+main > p {
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.63875vw; /* Changed from 13.11px to about 1.63875% of viewport width */
+  color: #4A4E74;
+  margin-top: 0;
+}
