@@ -44,24 +44,32 @@ div#root {
   align-items: center;
   row-gap: 1.25vw;
 }
-.dice-component, .dice-component-isHeld {
-  width: 4.48vw; /* Changed from 35.84px to approximately 4.48% of viewport width */
-  height: 4.48vw; /* Changed from 35.84px to approximately 4.48% of viewport width */
+.dice-component {
+  width: 50px; /* Changed from 35.84px to approximately 4.48% of viewport width */
+  height: 43px; /* Changed from 35.84px to approximately 4.48% of viewport width */
   border-radius: 0.4763vw; /* Changed from 3.81px to about 0.4763% of viewport width */
-  background-color: #F5F5F5;
   box-shadow: 0 0.5vw 1.25vw rgba(0, 0, 0, 0.25); /* Adjusted for responsive scaling */
-  color: black;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  grid-template-rows: repeat(3, 12px);
+  gap: 2px;
+  background-color: #FFFFFF;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
-  font-family: Karla, sans-serif;
-  font-weight: 700;
-  font-size: 2.566vw; /* Changed from 20.50px to about 2.566% of viewport width */
-  line-height: 3.009vw;
 }
 .dice-component-isHeld {
-  background-color: #59E391;
+  width: 50px; /* Changed from 35.84px to approximately 4.48% of viewport width */
+  height: 43px; /* Changed from 35.84px to approximately 4.48% of viewport width */
+  border-radius: 0.4763vw; 
+  box-shadow: 0 0.5vw 1.25vw rgba(0, 0, 0, 0.25); /* Adjusted for responsive scaling */
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  grid-template-rows: repeat(3, 12px);
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .dice-component > span {
@@ -101,4 +109,29 @@ main > p {
   font-size: 1.63875vw; /* Changed from 13.11px to about 1.63875% of viewport width */
   color: #4A4E74;
   margin-top: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border:0;
+}
+
+button:focus {
+  outline: 2px solid #4A90E2; 
+  outline-offset: 6px;       
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.75); /* Optional glow effect */
+}
+
+
+.dice-component > div {
+  width: 12px;
+  height: 12px;
+  background-color: #5035FF;
+  border-radius: 50%;
 }
