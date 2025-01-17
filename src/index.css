@@ -70,6 +70,7 @@ div#root {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: #FFFFFF;
 }
 
 .dice-component > span {
